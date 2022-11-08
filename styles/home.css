@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: black;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 95%;
+    max-width: 1200px;
+    border: 2px solid white;
+    /* background-image: url(/images/skelback.webp); */
+    display: grid;
+    grid-template: repeat(4, auto) / 1fr;
+    grid-template-areas:
+        "head nav"
+        "main main"
+        "foot foot"
+    ;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: PTSerif;
+    src: url(../fonts/PTSerif-Regular.ttf);
+}
+
+header {
+    grid-area: head;
+    padding: .9375em 1.875% .9375em 1.875%;
+    /* width: 500px; */
+}
+
+header img {
+    float: left;
+    padding-right: 1.875%;
+    width: 10.6%;
+    max-width: 120px;
+    min-width: 100px;
+}
+
+header h1 {
+    font-family: PTSerif;
+    font-size: 1.7em;
+    color: white;
+    padding-top: .5em;
+    text-align: center;
+}
+
+#nav_menu {
+    grid-area: nav;
+    clear: left;
+    margin: 0;
+    padding: 0;
+
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    position: relative;
+    display: grid;
+    grid-template: auto / repeat(5, 1fr);
+
+}
+
+#nav_menu ul li {
+    margin-top: 1.2em;
+    font-size: 1.2em;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    padding: .5em 0;
+    text-decoration: none;
+    color: white;
+}
+
+#nav_menu .current {
+    text-decoration: 3px underline grey;
+}
+
+main {
+    display: grid;
+    grid-template: auto / 20% repeat(2, 1fr);
+    grid-template-areas:
+        "side sec slide"
+        "side sec slide"
+        "side art art";
+
+    grid-area: main;
+
+}
+
+aside {
+    grid-area: side;
+    padding-left: 2em;
+}
+
+aside h3 {
+    color: white;
+    text-align: center;
+}
+
+aside ul {
+    display: grid;
+    grid-template: auto, repeat(4, 1fr);
+    padding: .5em 0;
+    list-style-type: none;
+
+}
+
+aside ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: .5em 0;
+    width: 80px;
+}
+
+section {
+    grid-area: sec;
+    border-bottom: 2px solid #84a98c;
+    /* border-top: 2px solid white; */
+    padding: .5em 0;
+
+}
+
+section h2 {
+    text-shadow: 3px 2px 1px #778da9;
+    padding-top: 0;
+    color: white;
+    font-size: 1.7em;
+    font-family: PTSerif;
+
+}
+
+section p {
+    float: left;
+    margin-top: .5em;
+    color: white;
+    width: 80%;
+
+    /* background-color: #eae0d5; */
+    /* border: 2px solid white; */
+}
+
+
+.slider {
+    grid-area: slide;
+    width: 90%;
+    max-width: 800px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-left: 1em;
+
+
+
+}
+
+.slide {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    position: absolute;
+    transition: all 0.5s;
+
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 18px;
+}
+
+.btn:active {
+    transform: scale(1.1);
+}
+
+.btn-prev {
+    top: 45%;
+    left: 2%;
+}
+
+.btn-next {
+    top: 45%;
+    right: 2%;
+}
+
+
+article {
+    grid-area: art;
+    padding: .5em 0;
+
+}
+
+article h2 {
+    color: white;
+    text-align: center;
+}
+
+article p {
+    margin-top: .5em;
+    float: right;
+
+    color: white;
+    /* width: 80%; */
+}
+
+article img {
+    margin-top: .5em;
+    margin-left: 25%;
+    border-radius: 20px;
+}
+
+footer {
+    border: 2px solid white;
+    background-color: black;
+    grid-area: foot;
+
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    padding: 1em 0;
+}
