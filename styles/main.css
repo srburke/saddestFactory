@@ -1,0 +1,159 @@
+html {
+    background-color: black;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 95%;
+    max-width: 1200px;
+    border: 2px solid white;
+    background-image: url(/images/skelback.webp);
+    display: grid;
+    grid-template: repeat(4, auto) / 1fr;
+    grid-template-areas: 
+    "head nav"
+    "main main";
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: PTSerif;
+    src: url(../fonts/PTSerif-Regular.ttf);
+}
+
+header {
+    grid-area: head;
+    padding: .9375em 1.875% .9375em 1.875%;
+    /* width: 500px; */
+}
+
+header img {
+    float: left;
+    padding-right: 1.875%;
+    width: 10.6%;
+    max-width: 120px;
+    min-width: 100px;
+}
+
+header h1 {
+    font-family: PTSerif;
+    font-size: 1.7em;
+    color: white;
+    padding-top: .5em;
+    text-align: center;
+}
+
+#nav_menu {
+    grid-area: nav;
+    clear: left;
+    margin: 0;
+    padding: 0;
+}
+#nav_menu ul{
+    list-style-type: none;
+    position: relative;
+    display: grid;
+    grid-template: auto / repeat(5, 1fr);
+    
+}
+
+#nav_menu ul li {
+    margin: .5em;
+    font-size: 1.2em;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    padding: .5em 0;
+    text-decoration: none;
+    color: white;
+}
+
+#nav_menu .current {
+    text-decoration: 3px underline grey;
+}
+
+main {
+    display: grid;
+    grid-template: auto / 20% auto;
+    grid-template-areas: 
+    "side sec"
+    "side art";
+    grid-area: main;
+}
+
+aside {
+    grid-area: side;
+    
+}
+
+aside h3 {
+    color: white;
+    text-align: center;
+}
+
+aside ul {
+    display: grid;
+    grid-template: auto, repeat(4, 1fr);
+    /* padding: .5em 0; */
+    
+}
+
+aside ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: .5em 0;
+    width: 80px;
+}
+
+section {
+    grid-area: sec;
+    /* border-top: 2px solid white; */
+    /* background-color: beige; */
+    padding: .5em;
+   
+}
+
+section h2 {
+    /* text-align: center; */
+    color: white;
+    font-size: 1.7em;
+    font-family: PTSerif;
+    
+}
+
+section p { 
+    background-color: black;
+    /* box-shadow: 2px 1px 2px 4px red; */
+    /* border-radius: 0 .5em; */
+    float: left;
+    margin-top: .5em;
+    color: white;
+    width: 40%;
+}
+
+section aside {
+    float: right;
+}
+
+article {
+    
+}
+
+section aside h4 {
+    color: white;
+    text-align: center;
+    margin-top: 0;
+}
+
+#slides img {
+    display: none;
+}
