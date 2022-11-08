@@ -119,6 +119,7 @@ section {
     /* border-top: 2px solid white; */
     /* background-color: beige; */
     padding: .5em;
+    border-bottom: 2px solid white;
    
 }
 
@@ -144,10 +145,6 @@ section aside {
     float: right;
 }
 
-article {
-    
-}
-
 section aside h4 {
     color: white;
     text-align: center;
@@ -156,4 +153,20 @@ section aside h4 {
 
 #slides img {
     display: none;
+}
+
+section aside img {
+    border: 3px solid white;
+}
+
+article {
+    margin-top: 2em;
+}
+
+article h2 {
+    color: white;
+}
+
+article p {
+    color: white;
 }
