@@ -1,0 +1,347 @@
+/*======== Global CSS Variables ======= */
+:root {
+    --header-height: 3.5rem;
+
+    --first-color: hsl(228, 66%, 53%);
+    --first-color-alt: hsl(228, 66%, 47%);
+    --first-color-light: hsl(228, 62%, 59%);
+    --first-color-lighten: hsl(228, 100%, 97%);
+    --second-color: hsl(25, 83%, 53%);
+    --title-color: hsl(228, 57%, 28%);
+    --text-color: hsl(228, 15%, 50%);
+    --text-color-light: hsl(228, 12%, 75%);
+    --border-color: hsl(228, 99%, 98%);
+    --body-color: #fff;
+    --container-color: #fff;
+
+    --body-font: PTSerif;
+    --biggest-font-size: 2.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    --z-tooltip: 10;
+    --z-fixed: 100;
+
+}
+
+@font-face {
+    font-family: PTSerif;
+    src: url(../fonts/PTSerif-Regular.ttf);
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+/*==== Header & Nav Menu ======= */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: var(--z-fixed);
+    transition: .4s;
+}
+
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.nav_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+/* .nav_list .nav_item .nav_link {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    font-weight: bold;
+} */
+
+
+.nav_logo {
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    column-gap: .25rem;
+    transition: .3s;
+}
+
+.nav_logo span {
+    font-family: PTSerif;
+    font-size: 1.5rem;
+
+}
+
+.nav_logo:hover {
+    color: var(--first-color);
+}
+
+/*================================ */
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1024px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.grid {
+    display: grid;
+}
+
+.section {
+    padding: 4.5rem 0 2rem;
+}
+
+.section_title {
+    font-size: var(--h2-font-size);
+    margin-bottom: 1rem;
+}
+
+.section_title a {
+    color: var(--second-color);
+}
+
+.section_subtitle {
+    display: block;
+    font-size: var(--small-font-size);
+}
+
+.article {
+    padding: 2rem 0 2rem;
+}
+
+.article_title {
+    font-size: var(--h2-font-size);
+    margin-bottom: 1rem;
+}
+
+.main {
+    overflow: hidden;
+}
+
+.about {
+    background: linear-gradient(170deg,
+            hsl(0, 0%, 22%) 0%,
+            hsl(0, 0%, 6%) 30%);
+    padding-bottom: 0;
+}
+
+.about_container,
+.founder_container {
+    padding-top: 2rem;
+    row-gap: 3.5rem;
+}
+
+.about_container,
+.grid {
+    margin: 0 auto;
+}
+
+.about_title {
+    font-size: var(--biggest-font-size);
+    color: #fff;
+    line-height: 120%;
+    margin-bottom: 1.25rem;
+}
+
+.about_description {
+    color: var(--text-color-light);
+    margin-bottom: 2rem;
+}
+
+
+.about_images {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.founder {}
+
+.founder_title {
+    font-size: var(--biggest-font-size);
+    color: black;
+    line-height: 120%;
+    margin-bottom: 1.25rem;
+}
+
+.founder_description {
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+.slider {
+    /* grid-area: slide; */
+    width: 90%;
+    max-width: 800px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 125px 125px 20px 20px;
+    display: inline-flex;
+    align-items: flex-start;
+    box-shadow: 0 16px 32px hsla(228, 66%, 25%, .25);
+}
+
+.slide {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    position: absolute;
+    transition: all 0.5s;
+
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 18px;
+}
+
+.btn:active {
+    transform: scale(1.1);
+}
+
+.btn-prev {
+    top: 45%;
+    left: 2%;
+}
+
+.btn-next {
+    top: 45%;
+    right: 2%;
+}
+
+
+@media screen and (max-width: 1023px) {
+    .nav_menu {
+        position: fixed;
+        top: 3rem;
+        background-color: var(--container-color);
+        box-shadow: 0 8px 24px hsl(228, 66%, 45%, .15);
+        width: 90%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        padding: 1rem 3rem;
+        border-radius: 1.25rem;
+        transition: .4s;
+    }
+
+
+    .nav_list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav_link {
+        color: var(--text-color);
+        display: flex;
+        padding: .25rem .25rem;
+        border-radius: 50%;
+    }
+
+    .nav_link span {
+        font-size: var(--small-font-size);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    :root {
+        --biggest-font-size: 4rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+
+
+    .nav_menu {
+        margin-top: 3rem;
+        border-radius: 20px;
+        box-shadow: 0px 0px 0px 2px rgba(255, 253, 253, 0.2),
+            0px 2px 4px rgba(255, 253, 253, 0.2),
+            0px 4px 8px rgba(255, 253, 253, 0.2),
+            0px 8px 16px rgba(255, 253, 253, 0.2);
+
+    }
+
+    .nav_item {
+        /* border: 2px solid white; */
+        border-radius: 15px;
+        margin: 20px;
+        padding: .5em;
+    }
+
+    .nav_list .nav_item .nav_link {
+        text-decoration: none;
+        color: white;
+        margin: 20px;
+        font-weight: bold;
+    }
+}
