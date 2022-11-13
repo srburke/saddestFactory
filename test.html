@@ -5,9 +5,18 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="/styles/test.css">
+        <link rel="stylesheet" href="/styles/slicknav.css">
         <link rel="shortcut icon" href="/images/sadfactlogo.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="/js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#nav_menu').slicknav({
+                    prependTo: "#mobile_menu"
+                });
+            });
+        </script>
         <title>Saddest Factory Records</title>
     </head>
 
@@ -17,10 +26,12 @@
             <nav class="nav">
                 <a href="#" class="nav_logo">
                     <img src="/images/sadfactlogo.png" class="logo" alt="">
-                    <span>SADDEST FACTORY RECORDS</span>
+                    <span id="largescreen">SADDEST FACTORY RECORDS</span>
+
                 </a>
 
-                <div class="nav_menu">
+                <nav id="mobile_menu"></nav>
+                <div class="nav_menu" id="nav_menu">
 
                     <ul class="nav_list">
                         <li class="nav_item">
@@ -60,20 +71,20 @@
                 <ul>
                     <li>
                         <a href="https://open.spotify.com/user/404vmwboxud8yc4aupf9xj8jt"><img
-                                src="/images/Spotify_Logo_RGB_Green.png" alt="" width="110px"></a>
+                                src="/images/Spotify_Icon_RGB_White.png" alt="" width="40px"></a>
                     </li>
                     <li>
                         <a href="https://www.instagram.com/saddestfactoryrecords/?hl=en"><img
-                                src="/images/Instagram_Glyph_Gradient_RGB.svg" alt="" width="40px"></a>
+                                src="/images/Instagram_Glyph_White.png" alt="" width="40px"></a>
                     </li>
                     <li>
                         <a href="https://twitter.com/saddestfactory"><img
-                                src="/images/Twitter social icons - circle - blue.svg" alt="twitter logo"
+                                src="/images/Twitter social icons - circle - white.png" alt="twitter logo"
                                 width="40px"></a>
                     </li>
                     <li>
                         <a href="https://www.facebook.com/saddestfactoryrecords"><img
-                                src="/images/f_logo_RGB-Blue_72.png" alt="" width="40px"></a>
+                                src="/images/f_logo_RGB-White_100.png" alt="" width="40px"></a>
                     </li>
                 </ul>
 
@@ -168,14 +179,14 @@
 
         </main>
         <footer class="footer section" id="footer">
-            <div class="footer_container container grid"></div>
-            <div>
-                <a href="#" class="footer_link">
-                    <img src="/images/sadfactlogo.png" class="footer_logo" alt="Saddest Factory Logo">
-                    <h3>Saddest Factory Records</h3>
-                </a>
+            <div class="footer_container container grid">
+                <div>
+                    <a href="#" class="footer_link">
+                        <img src="/images/sadfactlogo.png" class="footer_logo" alt="Saddest Factory Logo">
+                        <h3>Saddest Factory Records</h3>
+                    </a>
+                </div>
             </div>
-
         </footer>
     </body>
 
