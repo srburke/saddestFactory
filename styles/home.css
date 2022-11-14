@@ -77,10 +77,13 @@ blockquote {
 /*==== Header & Nav Menu ======= */
 .header {
     grid-area: head;
+    /*Sticky allows for header to move on scroll and allows header to be grid-area unlike position:fixed */
     position: sticky;
     padding-bottom: 2.5em;
     background-color: #fff;
+    /*Gives priority, so image carousel doesn't cover header element when scrolling */
     z-index: 1;
+    /*Stops header from overflowing and allows it to move with scroll */
     top: 0;
     left: 0;
 }
