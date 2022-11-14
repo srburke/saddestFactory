@@ -128,7 +128,6 @@ blockquote {
 .nav_link {
     color: #fff;
     display: flex;
-    border-radius: 50%;
     font-size: 1em;
     font-family: Montserrat;
 }
