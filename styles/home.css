@@ -91,7 +91,7 @@ blockquote {
     justify-content: space-between;
     align-items: center;
     margin-left: 0;
-    margin-right: 1.5rem;
+    margin-right: 1.5em;
 
 }
 
@@ -135,7 +135,6 @@ blockquote {
 .nav_list .nav_item {
     text-decoration: none;
     align-items: center;
-    /* margin: 10px; */
     font-weight: bold;
 }
 
@@ -185,7 +184,7 @@ blockquote {
 }
 
 .section {
-    padding: 2.5rem 0 2rem;
+    padding: 2.5em 0 2em;
 }
 
 .social {
@@ -209,8 +208,8 @@ blockquote {
 
 .about_container,
 .article_container {
-    padding-top: 2rem;
-    row-gap: 3.5rem;
+    padding-top: 2em;
+    row-gap: 3.5em;
 }
 
 .about_container,
@@ -304,7 +303,7 @@ blockquote {
 .article {
     grid-area: art;
     background: #fff;
-    padding: 2rem 0 2rem;
+    padding: 2em 0 2em;
 
 }
 
@@ -374,7 +373,7 @@ figure img:focus {
         margin-right: 1em;
     }
 
-    #largescreen {
+    #lablename {
         font-size: 1.5rem;
     }
 
@@ -413,7 +412,6 @@ figure img:focus {
         height: 100%;
         object-fit: cover;
     }
-
 
     .footer {
         padding: 0;
@@ -455,7 +453,6 @@ figure img:focus {
         padding-left: .4em;
         padding-right: .4em;
         padding-bottom: 1.3em;
-
     }
 
     .nav_link {
