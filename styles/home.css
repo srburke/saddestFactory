@@ -83,7 +83,9 @@ blockquote {
     background-color: #fff;
     /*Gives priority, so image carousel doesn't cover header element when scrolling */
     z-index: 1;
-    /*Stops header from overflowing and allows it to move with scroll */
+    /*Stops header from overflowing and allows it to move with scroll. 
+    Didnt work with position:fixed originally until I changed it to position:sticky which is
+    opposite of what the book states*/
     top: 0;
     left: 0;
 }
