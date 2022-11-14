@@ -333,6 +333,7 @@ figure {
 }
 
 figcaption {
+    font-size: var(--normal-font-size);
     font-weight: bold;
     color: #2b4162;
     font-family: Montserrat;
