@@ -56,26 +56,6 @@ a:visited {
     text-decoration: none;
 }
 
-p,
-blockquote {
-    line-height: 1.5;
-    font-family: Raleway;
-    font-weight: 500;
-}
-
-.art_link {
-    margin: 0 auto;
-}
-
-p::first-letter {
-    font-size: 1.5rem;
-}
-
-blockquote {
-    padding-top: 1em;
-    text-align: center;
-    color: #406e8e;
-}
 
 
 /*==== Header & Nav Menu ======= */
@@ -180,12 +160,9 @@ blockquote {
 
 /*======= Main Content (About Section and Article) ======== */
 .main {
-    display: grid;
     background: linear-gradient(170deg,
             #383838 0%,
             #0f0f0f 30%);
-    grid-template-areas: "about about about"
-        "art art art";
     grid-area: main;
 }
 
@@ -193,163 +170,9 @@ blockquote {
     padding: 2.5rem 0 2rem;
 }
 
-.social {
-    order: 2;
-    grid-row: 1 / 2;
-    grid-column: 4 / 3;
-    padding-top: 5.5em;
-}
-
-.social img {
-    width: 30%;
-    min-width: 30px;
-    max-width: 40px;
-}
 
 
-.about {
-    grid-area: about;
-    padding-bottom: 0;
-}
 
-.about_container,
-.article_container {
-    padding-top: 2rem;
-    row-gap: 3.5rem;
-}
-
-.about_container,
-.article_container,
-.grid {
-    margin: 0 auto;
-}
-
-.about_title {
-    font-size: var(--biggest-font-size);
-    color: #fff;
-    line-height: 120%;
-    margin-bottom: 1.25rem;
-
-}
-
-.about_description {
-    color: #a9b4c2;
-    margin-bottom: 2rem;
-    font-size: var(--normal-font-size);
-    border-top: 2px solid #ffff;
-}
-
-
-.about_images {
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-/*=========================================== */
-
-
-/*======= Image Carousel (CSS for btns/transitions given by creator of js file) slides personally modified) ======== */
-.slider {
-    width: 90%;
-    max-width: 800px;
-    height: 300px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 125px 125px 20px 20px;
-    display: inline-flex;
-    align-items: flex-start;
-    box-shadow: 0 16px 32px #16276a40;
-}
-
-.slide {
-    width: 100%;
-    max-width: 800px;
-    height: 350px;
-    position: absolute;
-    transition: all 0.5s;
-
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.btn {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    background-color: #fff;
-    font-size: 18px;
-}
-
-.btn:active {
-    transform: scale(1.1);
-}
-
-.btn-prev {
-    top: 45%;
-    left: 2%;
-}
-
-.btn-next {
-    top: 45%;
-    right: 2%;
-}
-
-/*======================================== */
-
-/*======= Article ======== */
-.article {
-    grid-area: art;
-    background: #fff;
-    padding: 2rem 0 2rem;
-
-}
-
-.article_title {
-    font-size: var(--biggest-font-size);
-    color: black;
-    line-height: 120%;
-    margin-bottom: 1.25rem;
-
-}
-
-.article_description {
-    color: #406e8e;
-    margin-bottom: 2rem;
-    font-size: var(--normal-font-size);
-    border-top: 2px solid black;
-}
-
-figure {
-    margin-bottom: 1em;
-    text-align: center;
-}
-
-figcaption {
-    font-weight: bold;
-    color: #2b4162;
-}
-
-figure img {
-    width: 50%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 100px 100px 20px 20px;
-    box-shadow: 0 16px 50px #16276a40;
-}
-
-figure img:hover,
-figure img:focus {
-    width: 60%;
-}
 
 /*======================================== */
 
