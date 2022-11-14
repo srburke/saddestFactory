@@ -4,9 +4,9 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="/styles/test.css">
+        <link rel="stylesheet" href="/styles/home.css">
         <link rel="stylesheet" href="/styles/slicknav.css">
-        <link rel="shortcut icon" href="/images/sadfactlogo.png">
+        <link rel="shortcut icon" href="/images/favicon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="/js/jquery.slicknav.min.js"></script>
@@ -25,7 +25,7 @@
         <header class="header" id="header">
             <nav class="nav">
                 <a href="#" class="nav_logo">
-                    <img src="/images/sadfactlogo.png" class="logo" alt="">
+                    <img src="/images/sadfactlogo.png" class="logo" alt="Saddest Factory Logo">
                     <span id="largescreen">SADDEST FACTORY RECORDS</span>
 
                 </a>
@@ -35,7 +35,7 @@
 
                     <ul class="nav_list">
                         <li class="nav_item">
-                            <a href="/test.html" class="nav_link">
+                            <a href="/index.html" class="nav_link">
                                 <span>Home</span>
                             </a>
                         </li>
@@ -71,20 +71,20 @@
                 <ul>
                     <li>
                         <a href="https://open.spotify.com/user/404vmwboxud8yc4aupf9xj8jt"><img
-                                src="/images/Spotify_Icon_RGB_White.png" alt="" width="40px"></a>
+                                src="/images/Spotify_Icon_RGB_White.png" alt="Spotify logo" width="40px"></a>
                     </li>
                     <li>
                         <a href="https://www.instagram.com/saddestfactoryrecords/?hl=en"><img
-                                src="/images/Instagram_Glyph_White.png" alt="" width="40px"></a>
+                                src="/images/Instagram_Glyph_White.png" alt="Instagram logo" width="40px"></a>
                     </li>
                     <li>
                         <a href="https://twitter.com/saddestfactory"><img
-                                src="/images/Twitter social icons - circle - white.png" alt="twitter logo"
+                                src="/images/Twitter social icons - circle - white.png" alt="Twitter logo"
                                 width="40px"></a>
                     </li>
                     <li>
                         <a href="https://www.facebook.com/saddestfactoryrecords"><img
-                                src="/images/f_logo_RGB-White_100.png" alt="" width="40px"></a>
+                                src="/images/f_logo_RGB-White_100.png" alt="Facebook logo" width="40px"></a>
                     </li>
                 </ul>
 
@@ -98,35 +98,43 @@
                         <p class="about_description">
                             Saddest Factory Records is an American record label
                             that was founded on October 5, 2020, by Phoebe Bridgers.
-                            The label operates as an imprint of Dead Oceans and artists that
-                            have been signed to the label include Sloppy Jane, MUNA, Claud,
-                            and Charlie Hickey.
+                            The label operates as an imprint of Dead Oceans, promoting undiscovered artists across
+                            all genres and creative relationships between both record label and artist.
+                            Artists that have been signed to the label include MUNA, Claud, Charlie Hickey,
+                            and Sloppy Jane (ordered left to right below). Saddest Factory contracts typically cover
+                            three albums in a
+                            profit-split
+                            deal, with
+                            the
+                            label only having rights to recordings and taking no cut of publishing or live revenue.
+
                         </p>
                     </div>
+
 
                     <div class="about_images">
                         <div class="slider">
                             <!-- slide 1-->
-
-                            <div class=slide>
+                            <div class=slide id="slide1">
                                 <img src="/images/muna.jpeg" alt="MUNA">
 
                             </div>
 
                             <!-- slide 2-->
-                            <div class="slide">
+                            <div class="slide" id="slide2">
                                 <img src="/images/claud.jpeg" alt="Claud">
 
                             </div>
                             <!-- slide 3-->
-                            <div class="slide">
+                            <div class="slide" id="slide3">
                                 <img src="/images/charlie.webp" alt="Charlie Hickey">
 
                             </div>
                             <!-- slide 4-->
-                            <div class="slide">
+                            <div class="slide" id="slide4">
                                 <img src="/images/sloppyjane.jpg" alt="Sloppy Jane">
                             </div>
+
                             <!-- Control Buttons-->
                             <button class="btn btn-next"> > </button>
                             <button class="btn btn-prev">
@@ -141,18 +149,19 @@
 
 
 
+
                 </div>
 
             </section>
 
-            <article class="founder article" id="founder">
-                <div class="founder_container container grid">
-                    <div class="founder_data">
+            <article class="article" id="article">
+                <div class="article_container container grid">
+                    <div class="article_data">
 
-                        <h1 class="founder_title">
+                        <h1 class="article_title">
                             Our Founder Phoebe Bridgers
                         </h1>
-                        <p class="founder_description">
+                        <p class="article_description">
                             For Phoebe Bridgers, Saddest Factory marks a new chapter in the career of one of indie
                             rock's brightest rising stars and pandemic success stories. Since releasing her 2017 debut,
                             <i>Stranger in the Alps</i>, the 28-year-old has steadly built word-of-mouth buzz thanks to
@@ -164,7 +173,7 @@
                             <br>
                         </p>
                         <figure>
-                            <img src="/images/phoebe.webp" class="founder_img" alt="Phoebe Bridgers Photo">
+                            <img src="/images/phoebe.webp" class="article_img" alt="Phoebe Bridgers Photo">
                             <figcaption>Phoebe Bridgers posing for Billboard 2020</figcaption>
                         </figure>
                         <blockquote><q>Dead Oceans had to twiddle their thumbs until people gave a s-t about my
@@ -178,12 +187,11 @@
             </article>
 
         </main>
-        <footer class="footer section" id="footer">
+        <footer class="footer" id="footer">
             <div class="footer_container container grid">
                 <div>
                     <a href="#" class="footer_link">
                         <img src="/images/sadfactlogo.png" class="footer_logo" alt="Saddest Factory Logo">
-                        <h3>Saddest Factory Records</h3>
                     </a>
                 </div>
             </div>
