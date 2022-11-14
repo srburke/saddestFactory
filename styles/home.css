@@ -388,13 +388,13 @@ figure img:focus {
     }
 }
 
-@media screen and (max-width: 848px) {
+@media screen and (max-width: 1023px) {
 
     .nav_logo {
         margin-left: .5em;
     }
 
-    #largescreen {
+    #labelname {
         display: none;
     }
 
@@ -407,25 +407,17 @@ figure img:focus {
     }
 
     figure img {
-        max-width: 507px;
-        min-width: 348px;
+        max-width: 600px;
+        min-width: 400px;
         height: 100%;
         object-fit: cover;
     }
+
 
     .footer {
         padding: 0;
     }
 
-    .btn-prev {
-        top: 65%;
-        left: 2%;
-    }
-
-    .btn-next {
-        top: 65%;
-        right: 2%;
-    }
 }
 
 @media screen and (max-width: 698px) {
@@ -468,6 +460,16 @@ figure img:focus {
     .social img {
         min-width: 25px;
         max-width: 40px;
+    }
+
+    .btn-prev {
+        top: 65%;
+        left: 2%;
+    }
+
+    .btn-next {
+        top: 65%;
+        right: 2%;
     }
 
 
