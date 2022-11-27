@@ -1,0 +1,438 @@
+/*======== Global CSS Variables ======= */
+:root {
+    --biggest-font-size: 3rem;
+    --normal-font-size: .938rem;
+    --smaller-font-size: .75rem;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template: repeat(3, auto) / 1fr;
+    grid-template-areas:
+        "head"
+        "main"
+        "foot";
+
+}
+
+/*Container and Grid Max-Width=1280px to center main contents nicely*/
+.container {
+    max-width: 1280px;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.grid {
+    display: grid;
+}
+
+/*================================ */
+
+ul {
+    list-style: none;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+h3 {
+    color: #fff;
+}
+
+/*==== Header & Nav Menu ======= */
+.header {
+    grid-area: head;
+    /*Sticky allows for header to move on scroll and allows header to be grid-area unlike position:fixed */
+    position: sticky;
+    padding-bottom: 2.5em;
+    background-color: #fff;
+    /*Gives priority, so image carousel doesn't cover header element when scrolling */
+    z-index: 1;
+    /*Stops header from overflowing and allows it to move with scroll. 
+    Didnt work with position:fixed originally until I changed it to position:sticky which is
+    opposite of what the book states*/
+    top: 0;
+    left: 0;
+}
+
+.nav {
+    height: 3.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 1.5em;
+
+}
+
+.nav_menu {
+    margin-top: 3em;
+    background: linear-gradient(170deg,
+            #383838 0%,
+            #0f0f0f 30%);
+    border-radius: 1.25em;
+    box-shadow: 0 2px 5px 2px rgba(34, 32, 32, 0.45);
+}
+
+.nav_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1.5em;
+}
+
+.nav_item {
+    background: none;
+    box-shadow: none;
+    padding: 1em;
+    border-radius: 15px;
+
+}
+
+.nav_item:hover,
+.nav_item:focus {
+    box-shadow: inset -5px -5px 9px rgba(114, 105, 105, 0.45), inset 5px 5px 9px rgba(67, 67, 71, 0.3);
+    background: #406e8e;
+}
+
+.nav_link {
+    color: #fff;
+    display: flex;
+    font-size: 1em;
+    font-family: Montserrat;
+}
+
+.nav_list .nav_item {
+    text-decoration: none;
+    align-items: center;
+    font-weight: bold;
+}
+
+.nav_logo {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .25em;
+    margin-top: 2.5em;
+
+}
+
+.logo {
+    width: 30%;
+    min-width: 100px;
+    max-width: 120px;
+}
+
+.nav_logo .smallscreen {
+    display: none;
+}
+
+.nav_logo span {
+    color: #406e8e;
+    text-decoration: underline black 5px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.nav_logo:hover {
+    color: var(--first-color);
+}
+
+/*================================ */
+
+
+/*======= Main Content (About Section and Article) ======== */
+.main {
+    display: grid;
+    background: linear-gradient(170deg,
+            #383838 0%,
+            #0f0f0f 30%);
+    grid-template-areas: "tour tour tour"; 
+    grid-area: main;
+}
+
+.section {
+    padding: 2.5em 0 2em;
+}
+
+
+.tour {
+    grid-area: tour;
+    padding-bottom: 2em;
+}
+
+.tour_container {
+    
+    padding-top: 2em;
+    row-gap: 3.5em;
+}
+
+.tour_container,
+.grid {
+    
+    margin: 0 auto;
+}
+
+figure {
+    display: block;
+    margin: 0 auto;
+    padding: 1em 0;
+    /* margin-left: 0; */
+    width: 85%;
+        
+}
+
+.tour_title {
+    font-size: var(--biggest-font-size);
+    color: #fff;
+    line-height: 120%;
+    margin-bottom: 1.25rem;
+    text-align: left;
+    border-bottom: 2px solid #406e8e;
+}
+
+    
+table {
+    width: 85%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    
+}
+
+    
+th {
+    color: #a9b4c2;
+}
+
+th p {
+    color: #fff;
+    font-weight: 300;
+}
+    
+th,
+td {
+   
+    padding: 14px 10px;
+}
+
+td {
+    color: #fff;
+}
+
+tbody tr:hover{
+    background-color: transparent;
+    box-shadow: 0 2px 5px 2px rgba(142, 173, 226, 0.45);
+    
+}
+
+thead th {
+    color: #fff;
+    padding-bottom: .5em;
+   
+}
+
+.tour_loc {
+    width: 40%;
+}
+
+
+td:nth-of-type(1), th:nth-of-type(1) {
+    text-align: left;
+    
+}
+
+td:nth-of-type(2) {
+    text-align: right
+}
+
+
+thead th:nth-child(1) {
+    text-align: left;
+}
+
+thead th:nth-child(2) {
+    text-align: left;
+}
+
+thead th:nth-child(3) {
+    text-align: right;
+}
+
+    
+tbody th {
+    vertical-align: top;
+}
+
+
+/* .about_description {
+    color: #a9b4c2;
+    margin-bottom: 2rem;
+    font-size: var(--normal-font-size);
+    border-top: 2px solid #ffff;
+} */
+
+
+/*=========================================== */
+
+
+/*======= Footer ======== */
+.footer {
+    grid-area: foot;
+    text-align: center;
+    background-color: #0f0f0f;
+    padding-bottom: .5em;
+}
+
+/*========================== */
+
+
+/*======= Screen Sizes/Breakpoints ======== */
+
+#mobile_menu {
+    display: none;
+}
+
+@media screen and (max-width: 1279px) {
+    .container {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    #lablename {
+        font-size: 1.5rem;
+    }
+
+
+    #fontdecoration {
+        text-decoration: underline 5px black;
+    }
+
+    .footer {
+        grid-area: foot;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+
+    .nav_logo {
+        margin-left: .5em;
+    }
+
+    #labelname {
+        display: none;
+    }
+
+    .nav_menu {
+        width: 80%;
+    }
+
+    .tour {
+        padding-bottom: 0;
+    }
+
+
+    .footer {
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 698px) {
+    #mobile_menu {
+        display: flex;
+        margin-top: 2.5em;
+    }
+
+    #nav_menu {
+        display: none;
+    }
+
+    .nav_item {
+        padding-bottom: .68em;
+    }
+
+}
+
+@media screen and (max-width: 582px) {
+    #mobile_menu {
+        font-size: var(--smaller-font-size);
+    }
+
+    .nav_item {
+        padding-left: .4em;
+        padding-right: .4em;
+        padding-bottom: 1.3em;
+    }
+
+    .nav_link {
+        font-size: var(--smaller-font-size);
+    }
+
+
+}
+
+@media screen and (max-width: 475px) {
+    #mobile_menu {
+        font-size: .75rem;
+    }
+
+    .container {
+        margin-left: .25em;
+        margin-right: .25em;
+    }
+
+    .nav_item {
+        padding-left: 0em;
+        padding-right: 0em;
+        padding-bottom: 1.3em;
+    }
+
+    .nav_link {
+        font-size: var(--smaller-font-size);
+    }
+
+    .tour_title {
+        font-size: 2rem;
+    }
+
+    .tour {
+        padding-top: .25em;
+    }
+
+    /* .about_description,
+    .article_description,
+    blockquote {
+        font-size: var(--smaller-font-size);
+    } */
+
+
+}
+
+@media screen and (min-width: 1280px) {
+    :root {
+        --biggest-font-size: 4rem;
+        --normal-font-size: 1.05rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+/*================================================= */
