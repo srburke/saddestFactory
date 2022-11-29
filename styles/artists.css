@@ -16,6 +16,11 @@
     src: url(../fonts/Montserrat-VariableFont_wght.ttf);
 }
 
+@font-face {
+    font-family: Noto;
+    src: url(../fonts/NotoSerifKhojki-VariableFont_wght.ttf);
+}
+
 * {
 
     margin: 0;
@@ -159,16 +164,136 @@ a:visited {
 
 
 /*======= Main Content (About Section and Article) ======== */
-.main {
+/* .main {
     background: linear-gradient(170deg,
             #383838 0%,
             #0f0f0f 30%);
-    grid-area: main;
-}
+} */
 
 .section {
-    padding: 2.5rem 0 2rem;
+    display: grid;
+    grid-template: repeat(2, 480px) / repeat(2, 1fr);
+    /* row-gap: 20px;
+    grid-gap: 20px; */
+    grid-template-areas:
+        "muna claud"
+        "charlie jane";
 }
+
+.muna_container {
+    grid-area: muna;
+    background-image: linear-gradient(340deg, rgba(245, 246, 252, 0.20), rgba(209, 154, 36, 0.72)), url(/images/muna2.webp);
+
+}
+
+.claud_container {
+    grid-area: claud;
+    background-image: linear-gradient(-127deg, rgba(245, 246, 252, 0.20), rgba(122, 220, 181, 0.72)), url(/images/claud2.png);
+
+}
+
+.charlie_container {
+    grid-area: charlie;
+    background-image: linear-gradient(-340deg, rgba(245, 246, 252, 0.20), rgba(25, 96, 189, 0.72)), url(/images/charlie2.jpg);
+
+}
+
+.jane_container {
+    grid-area: jane;
+    background-image: linear-gradient(-127deg, rgba(245, 246, 252, 0.20), rgba(117, 19, 93, 0.72)), url(/images/jane.jpg);
+
+}
+
+.muna_container,
+.jane_container {
+    background-size: cover;
+    background-position: center center center;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset -5px -5px 9px rgba(114, 105, 105, 0.45), inset 5px 5px 9px rgba(50, 50, 53, 0.3);
+}
+
+.claud_container,
+.charlie_container {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset -5px -5px 9px rgba(114, 105, 105, 0.45), inset 5px 5px 9px rgba(50, 50, 53, 0.3);
+}
+
+
+.title {
+    position: absolute;
+    top: 25%;
+    left: 100px;
+    width: 650px;
+    height: 200px;
+}
+
+.title h2 {
+    font-size: 2.8rem;
+    color: #fdf0d5;
+    line-height: 2.8rem;
+    text-transform: uppercase;
+    font-family: Noto;
+    font-weight: 300;
+    text-shadow: 3px 2px 2px black;
+    padding-bottom: .8rem;
+}
+
+
+.title:not(:hover) .muna_about,
+.title:not(:hover) .claud_about,
+.title:not(:hover) .charlie_about,
+.title:not(:hover) .jane_about {
+    display: none;
+}
+
+.muna_about,
+.claud_about,
+.charlie_about,
+.jane_about {
+    font-size: var(--normal-font-size);
+    font-family: Raleway;
+    color: black;
+    font-weight: 500;
+    text-align: left;
+    box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem #fff;
+    border-right: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    border-top: 4px solid black;
+    border-left: 4px solid black;
+    padding: .5rem 2rem;
+}
+
+.muna_about {
+    background: rgba(214, 93, 119, 0.85);
+}
+
+.claud_about {
+    background: rgba(122, 220, 181, 0.85);
+}
+
+.charlie_about {
+    background: rgba(59, 125, 211, 0.85);
+}
+
+.jane_about {
+    background: rgba(185, 62, 152, 0.85);
+}
+
+
+
+
 
 
 

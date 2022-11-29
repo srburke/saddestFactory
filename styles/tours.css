@@ -165,7 +165,7 @@ h3 {
     background: linear-gradient(170deg,
             #383838 0%,
             #0f0f0f 30%);
-    grid-template-areas: "tour tour tour"; 
+    grid-template-areas: "tour tour tour";
     grid-area: main;
 }
 
@@ -180,14 +180,14 @@ h3 {
 }
 
 .tour_container {
-    
+
     padding-top: 2em;
     row-gap: 3.5em;
 }
 
 .tour_container,
 .grid {
-    
+
     margin: 0 auto;
 }
 
@@ -197,7 +197,7 @@ figure {
     padding: 1em 0;
     /* margin-left: 0; */
     width: 85%;
-        
+
 }
 
 .tour_title {
@@ -209,27 +209,27 @@ figure {
     border-bottom: 2px solid #406e8e;
 }
 
-    
+
 table {
     width: 85%;
     margin: 0 auto;
-    border-collapse: collapse;
-    
+    border-collapse: separate;
+
 }
 
-    
+
 th {
     color: #a9b4c2;
+    text-align: left;
 }
 
 th p {
     color: #fff;
     font-weight: 300;
 }
-    
+
 th,
 td {
-   
     padding: 14px 10px;
 }
 
@@ -237,49 +237,42 @@ td {
     color: #fff;
 }
 
-tbody tr:hover{
+tbody tr:hover {
     background-color: transparent;
     box-shadow: 0 2px 5px 2px rgba(142, 173, 226, 0.45);
-    
+
 }
 
 thead th {
     color: #fff;
     padding-bottom: .5em;
-   
-}
 
-.tour_loc {
-    width: 40%;
 }
 
 
-td:nth-of-type(1), th:nth-of-type(1) {
+td:nth-of-type(1) {
     text-align: left;
-    
+    width: 45%;
+
 }
 
 td:nth-of-type(2) {
-    text-align: right
+    text-align: right;
+    width: 11%;
+    padding-right: .5em;
+
 }
 
-
-thead th:nth-child(1) {
-    text-align: left;
-}
-
-thead th:nth-child(2) {
-    text-align: left;
-}
 
 thead th:nth-child(3) {
     text-align: right;
 }
 
-    
+
 tbody th {
     vertical-align: top;
 }
+
 
 
 /* .about_description {
