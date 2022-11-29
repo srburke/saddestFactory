@@ -148,12 +148,12 @@ a:visited {
 }
 
 .nav_logo span {
-    color: #406e8e;
-    text-decoration: underline black 5px;
-    font-family: Montserrat;
-    font-weight: bold;
-    font-size: 1.8rem;
+    color: #000066;
+    font-family: Noto;
+    font-weight: 600;
+    font-size: 2rem;
     text-align: center;
+    text-shadow: 2px 2px 2px #908484;
 }
 
 .nav_logo:hover {
