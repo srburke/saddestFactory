@@ -164,26 +164,57 @@ a:visited {
 
 
 /*======= Main Content (About Section and Article) ======== */
-/* .main {
+.main {
     background: linear-gradient(170deg,
             #383838 0%,
             #0f0f0f 30%);
-} */
-
-.section {
     display: grid;
     grid-template: repeat(2, 480px) / repeat(2, 1fr);
     /* row-gap: 20px;
     grid-gap: 20px; */
     grid-template-areas:
-        "muna claud"
+        "sec sec"
+        "sec sec";
+    grid-area: main;
+}
+
+.section {
+    display: grid;
+    grid-area: sec;
+
+    grid-template-areas: "muna claud"
         "charlie jane";
 }
+
 
 .muna_container {
     grid-area: muna;
     background-image: linear-gradient(340deg, rgba(245, 246, 252, 0.20), rgba(209, 154, 36, 0.72)), url(/images/muna2.webp);
 
+}
+
+.muna_container img {
+    position: relative;
+    left: 91%;
+    top: 84%;
+}
+
+.claud_container img {
+    position: relative;
+    right: .3%;
+    top: 84%;
+}
+
+.charlie_container img {
+    position: relative;
+    left: 91%;
+    bottom: .19%;
+}
+
+.jane_container img {
+    position: relative;
+    top: .2%;
+    right: .4%;
 }
 
 .claud_container {
@@ -322,9 +353,14 @@ a:visited {
 }
 
 @media screen and (max-width: 1279px) {
+
     .container {
         margin-left: 1em;
         margin-right: 1em;
+    }
+
+    .title {
+        width: 400px;
     }
 
     #largescreen {
