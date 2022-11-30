@@ -193,29 +193,6 @@ a:visited {
 
 }
 
-.muna_container img {
-    position: relative;
-    left: 91%;
-    top: 84%;
-}
-
-.claud_container img {
-    position: relative;
-    right: .3%;
-    top: 84%;
-}
-
-.charlie_container img {
-    position: relative;
-    left: 91%;
-    bottom: .19%;
-}
-
-.jane_container img {
-    position: relative;
-    top: .2%;
-    right: .4%;
-}
 
 .claud_container {
     grid-area: claud;
