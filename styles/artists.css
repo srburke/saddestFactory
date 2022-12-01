@@ -248,9 +248,9 @@ a:visited {
 }
 
 .title h2 {
-    font-size: 2.8rem;
+    font-size: var(--biggest-font-size);
     color: #fdf0d5;
-    line-height: 2.8rem;
+    line-height: var(--biggest-font-size);
     text-transform: uppercase;
     font-family: Noto;
     font-weight: 300;
