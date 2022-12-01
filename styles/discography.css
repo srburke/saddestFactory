@@ -169,8 +169,7 @@ a:visited {
             #383838 0%,
             #0f0f0f 30%);
     display: grid;
-
-    grid-template: repeat(2, 550px) / repeat(2, auto);
+    grid-template: repeat(2, 480px) / repeat(2, 1fr);
     /* row-gap: 20px;
     grid-gap: 20px; */
     grid-template-areas:
@@ -242,9 +241,10 @@ a:visited {
 
 .title {
     position: absolute;
-    top: 14%;
-    left: 100px;
-
+    top: 15%;
+    left: 175px;
+    width: 700px;
+    height: 200px;
 }
 
 .title h2 {
@@ -258,44 +258,51 @@ a:visited {
     padding-bottom: .8rem;
 }
 
+
+.title:not(:hover) .muna_about,
+.title:not(:hover) .claud_about,
+.title:not(:hover) .charlie_about,
+.title:not(:hover) .jane_about {
+    display: none;
+}
+
 .muna_about,
 .claud_about,
 .charlie_about,
 .jane_about {
-    display: none;
-}
-
-.title:hover .muna_about,
-.title:active .muna_about,
-.title:focus .muna_about,
-.title:hover .claud_about,
-.title:active .claud_about,
-.title:focus .claud_about,
-.title:hover .charlie_about,
-.title:active .charlie_about,
-.title:focus .charlie_about,
-.title:hover .jane_about,
-.title:active .jane_about,
-.title:focus .jane_about {
-    display: block;
-    background: rgb(30, 27, 24, 0.95);
     font-size: var(--normal-font-size);
-    box-shadow: 0.5rem 0.5rem rgba(22, 11, 1, 0.9), -0.5rem -0.5rem rgba(22, 11, 1, 0.9), inset 3px 3px 9px rgba(73, 73, 80, 0.3), inset -3px -3px 9px rgba(73, 73, 80, 0.3);
     font-family: Montserrat;
     color: #fff;
     font-weight: 500;
-    line-height: 1.5;
     text-align: left;
-    border: 2px solid #8d99ae;
+    box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem #fff;
+    border-right: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    border-top: 4px solid black;
+    border-left: 4px solid black;
     padding: .5rem 2rem;
 
-    margin-right: 5em;
 }
 
+.muna_about {
+    background: rgba(214, 93, 119, 0.85);
+}
+
+.claud_about {
+    background: rgba(93, 212, 165, 0.85);
+}
+
+.charlie_about {
+    background: rgba(59, 125, 211, 0.85);
+}
+
+.jane_about {
+    background: rgba(185, 62, 152, 0.85);
+}
 
 /**Vinyl Image Link CSS **/
 
-/* a:hover .nonhover,
+a:hover .nonhover,
 .ishover {
     display: none;
 }
@@ -348,7 +355,7 @@ a:hover .ishover {
 .jane_container a:hover {
     top: 8px;
     left: 10px;
-} */
+}
 
 /*======================================== */
 
@@ -380,21 +387,16 @@ a:hover .ishover {
     display: none;
 }
 
-@media screen and (max-width: 1395px) {
+@media screen and (max-width: 1279px) {
 
     .container {
         margin-left: 1em;
         margin-right: 1em;
     }
 
-    .muna_container {
-        background-position: center;
-    }
-
     .title {
-        top: 5%;
+        width: 400px;
     }
-
 
     #largescreen {
         font-size: 1.5rem;
@@ -411,7 +413,7 @@ a:hover .ishover {
     }
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 848px) {
 
     .nav_logo {
         margin-left: .5em;
@@ -425,32 +427,15 @@ a:hover .ishover {
         width: 80%;
     }
 
-
-    .title {
-        top: 2%;
-        left: 75px;
+    .about {
+        padding-bottom: 0;
     }
 
-    .title h2 {
-        font-size: 2.3rem;
-    }
-
-    .title:hover .muna_about,
-    .title:active .muna_about,
-    .title:focus .muna_about,
-    .title:hover .claud_about,
-    .title:active .claud_about,
-    .title:focus .claud_about,
-    .title:hover .charlie_about,
-    .title:active .charlie_about,
-    .title:focus .charlie_about,
-    .title:hover .jane_about,
-    .title:active .jane_about,
-    .title:focus .jane_about {
-        width: 350px;
-        padding-right: .5rem;
-        padding-left: .5rem;
-        font-size: var(--normal-font-size);
+    figure img {
+        max-width: 507px;
+        min-width: 348px;
+        height: 100%;
+        object-fit: cover;
     }
 
 
@@ -458,75 +443,18 @@ a:hover .ishover {
         padding: 0;
     }
 
-}
+    .btn-prev {
+        top: 65%;
+        left: 2%;
+    }
 
-@media screen and (max-width: 900px) {
-    .title {
-        left: 50px;
+    .btn-next {
+        top: 65%;
+        right: 2%;
     }
 }
 
-@media screen and (max-width: 786px) {
-    .main {
-        grid-template-areas:
-            "sec sec"
-            "sec sec"
-            "sec sec"
-            "sec sec";
-    }
-
-    .section {
-        grid-template-areas:
-            "muna muna"
-            "claud claud"
-            "charlie charlie"
-            "jane jane";
-    }
-
-    .muna_container,
-    .claud_container,
-    .charlie_container,
-    .jane_container {
-        height: 480px;
-    }
-
-    .jane_container {
-        background-position: center center center;
-    }
-
-    .title {
-        width: 80%;
-        top: 10%;
-    }
-
-    .title h2 {
-        font-size: 2.8rem;
-    }
-
-
-    .title:hover .muna_about,
-    .title:active .muna_about,
-    .title:focus .muna_about,
-    .title:hover .claud_about,
-    .title:active .claud_about,
-    .title:focus .claud_about,
-    .title:hover .charlie_about,
-    .title:active .charlie_about,
-    .title:focus .charlie_about,
-    .title:hover .jane_about,
-    .title:active .jane_about,
-    .title:focus .jane_about {
-        width: 100%;
-        height: auto;
-
-        padding-top: 1rem;
-
-        padding-right: .5rem;
-        padding-left: .5rem;
-
-    }
-
-
+@media screen and (max-width: 698px) {
     #mobile_menu {
         display: flex;
         margin-top: 2.5em;
@@ -542,13 +470,9 @@ a:hover .ishover {
 
 }
 
-@media screen and (max-width: 585px) {
+@media screen and (max-width: 582px) {
     #mobile_menu {
         font-size: var(--smaller-font-size);
-    }
-
-    p {
-        font-size: var(--small-font-size);
     }
 
     .nav_item {
