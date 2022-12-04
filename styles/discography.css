@@ -166,12 +166,12 @@ a:visited {
     background: linear-gradient(170deg,
             #383838 0%,
             #0f0f0f 30%);
-   
+
 }
 
-.section .container{
-   margin: 0 auto;
-   position: relative;
+.section .container {
+    margin: 0 auto;
+    position: relative;
 }
 
 .section .container li {
@@ -182,16 +182,16 @@ a:visited {
 .section .container li .image {
     position: relative;
     width: 100%;
-   
+
 }
 
-.section .container li  .release_date {
+.section .container li .release_date {
     position: absolute;
     width: 65%;
     height: 35%;
     top: 60%;
     left: 20px;
-    
+
 }
 
 .image:not(:hover) .release_date {
@@ -199,18 +199,35 @@ a:visited {
 }
 
 .image:hover .release_date {
-    background: #f2e9e4;
-    box-shadow: -5px -5px 1px rgb(22, 11, 1), inset -2px -2px 9px   rgba(66, 81, 105, 0.45), inset 2px 2px 9px   rgba(66, 81, 105, 0.45);
+    background: rgba(30, 27, 24, 0.83);
+    /* box-shadow: -5px -5px 1px rgb(22, 11, 1), inset -2px -2px 9px rgba(66, 81, 105, 0.45), inset 2px 2px 9px rgba(66, 81, 105, 0.45); */
     border-radius: 2px;
-    border: 2px solid rgb(22, 11, 1);
+
+
 }
 
-.release_date h4, .release_date p{
-    color: black;
+.release_date h4,
+.release_date p {
+    color: #fff;
     display: flex;
     margin-left: .5em;
     padding-top: .5em;
+    font-family: Montserrat;
 }
+
+.release_date #artist_name {
+    padding-top: 0;
+    color: #a8dadc;
+}
+
+.release_date #buy_disc {
+    font-size: 1.1rem;
+
+    /* background-color: rgba(22, 11, 1, 0.9); */
+
+
+}
+
 
 
 .release_date {
