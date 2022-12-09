@@ -191,7 +191,7 @@ a:visited {
 .muna_container {
     grid-area: muna;
     background-image: linear-gradient(340deg, rgba(245, 246, 252, 0.20), rgba(209, 154, 36, 0.72)), url(/images/muna2.webp);
-
+    position: relative;
 }
 
 
@@ -258,25 +258,19 @@ a:visited {
     padding-bottom: .8rem;
 }
 
-.muna_about,
-.claud_about,
-.charlie_about,
-.jane_about {
+.about {
     display: none;
 }
 
-.title:hover .muna_about,
-.title:active .muna_about,
-.title:focus .muna_about,
-.title:hover .claud_about,
-.title:active .claud_about,
-.title:focus .claud_about,
-.title:hover .charlie_about,
-.title:active .charlie_about,
-.title:focus .charlie_about,
-.title:hover .jane_about,
-.title:active .jane_about,
-.title:focus .jane_about {
+.muna_container:hover .about,
+.muna_container:active .about,
+.muna_container:focus .about, .claud_container:hover .about,
+.claud_container:active .about,
+.claud_container:focus .about, .charlie_container:hover .about,
+.charlie_container:active .about,
+.charlie_container:focus .about, .jane_container:hover .about,
+.jane_container:active .about,
+.jane_container:focus .about   {
     display: block;
     background: rgb(30, 27, 24, 0.95);
     font-size: var(--normal-font-size);
@@ -290,6 +284,29 @@ a:visited {
     padding: .5rem 2rem;
 
     margin-right: 5em;
+}
+
+.social img {
+    width: 30%;
+    min-width: 35px;
+    max-width: 45px;
+}
+
+.social ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.social { 
+    margin-top: 1em;
+    position: absolute;
+    left: 94%;
+}
+
+.muna_container:not(:hover) .social, .claud_container:not(:hover) .social, 
+.charlie_container:not(:hover) .social, 
+.jane_container:not(:hover) .social {
+    display: none;
 }
 
 
@@ -382,11 +399,6 @@ a:hover .ishover {
 
 @media screen and (max-width: 1395px) {
 
-    .container {
-        margin-left: 1em;
-        margin-right: 1em;
-    }
-
     .muna_container {
         background-position: center;
     }
@@ -435,23 +447,25 @@ a:hover .ishover {
         font-size: 2.3rem;
     }
 
-    .title:hover .muna_about,
-    .title:active .muna_about,
-    .title:focus .muna_about,
-    .title:hover .claud_about,
-    .title:active .claud_about,
-    .title:focus .claud_about,
-    .title:hover .charlie_about,
-    .title:active .charlie_about,
-    .title:focus .charlie_about,
-    .title:hover .jane_about,
-    .title:active .jane_about,
-    .title:focus .jane_about {
-        width: 350px;
+    .muna_container:hover .about,
+    .muna_container:active .about,
+    .muna_container:focus .about, .claud_container:hover .about,
+    .claud_container:active .about,
+    .claud_container:focus .about, .charlie_container:hover .about,
+    .charlie_container:active .about,
+    .charlie_container:focus .about, .jane_container:hover .about,
+    .jane_container:active .about,
+    .jane_container:focus .about  {
+        width: 80%;
+       
         padding-right: .5rem;
         padding-left: .5rem;
         font-size: var(--normal-font-size);
     }
+    
+   .social {
+    left: 90%;
+   }
 
 
     .footer {
@@ -460,13 +474,22 @@ a:hover .ishover {
 
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 960px) {
+  
+    .social img {
+        min-width: 25px;
+        max-width: 35px;
+    }
+    
+    
     .title {
         left: 50px;
     }
+    
+    
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 886px) {
     .main {
         grid-template-areas:
             "sec sec"
@@ -496,7 +519,7 @@ a:hover .ishover {
 
     .title {
         width: 80%;
-        top: 10%;
+        top: 15%;
     }
 
     .title h2 {
@@ -504,18 +527,15 @@ a:hover .ishover {
     }
 
 
-    .title:hover .muna_about,
-    .title:active .muna_about,
-    .title:focus .muna_about,
-    .title:hover .claud_about,
-    .title:active .claud_about,
-    .title:focus .claud_about,
-    .title:hover .charlie_about,
-    .title:active .charlie_about,
-    .title:focus .charlie_about,
-    .title:hover .jane_about,
-    .title:active .jane_about,
-    .title:focus .jane_about {
+    .muna_container:hover .about,
+.muna_container:active .about,
+.muna_container:focus .about, .claud_container:hover .about,
+.claud_container:active .about,
+.claud_container:focus .about, .charlie_container:hover .about,
+.charlie_container:active .about,
+.charlie_container:focus .about, .jane_container:hover .about,
+.jane_container:active .about,
+.jane_container:focus .about {
         width: 100%;
         height: auto;
 
@@ -539,7 +559,21 @@ a:hover .ishover {
     .nav_item {
         padding-bottom: .68em;
     }
-
+    
+    .social ul {
+        flex-direction: row;
+    }
+    
+    .social {
+        margin-top: 3em;
+        left: 80%;
+    }
+    
+    .social img {
+        min-width: 35px;
+        max-width: 45px;
+    }
+    
 }
 
 @media screen and (max-width: 585px) {
@@ -564,13 +598,14 @@ a:hover .ishover {
 
     .social ul {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: row;
+        margin-right: 2em;
+      
     }
 
     .social img {
         min-width: 25px;
-        max-width: 40px;
+        max-width: 35px;
     }
 
 
@@ -578,7 +613,7 @@ a:hover .ishover {
 
 @media screen and (min-width: 1280px) {
     :root {
-        --biggest-font-size: 4rem;
+        --biggest-font-size: 3.5rem;
         --normal-font-size: 1.05rem;
         --small-font-size: .875rem;
         --smaller-font-size: .813rem;
