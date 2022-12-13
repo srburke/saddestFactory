@@ -156,14 +156,14 @@ a:visited {
     text-shadow: 2px 2px 2px #908484;
 }
 
-.nav_logo:hover {
+.nav_logo:hover, .nav_logo:focus {
     color: var(--first-color);
 }
 
 /*================================ */
 
 
-/*======= Main Content (About Section and Article) ======== */
+/*======= Main Content (Section for Artists Bio Information that is in div Containers) ======== */
 .main {
     background: linear-gradient(170deg,
             #383838 0%,
@@ -358,7 +358,7 @@ a:visited {
     }
 
 
-    #largescreen {
+    #lablename {
         font-size: 1.5rem;
     }
 
@@ -494,9 +494,7 @@ a:visited {
     .jane_container:focus .about {
         width: 100%;
         height: auto;
-
         padding-top: 1rem;
-
         padding-right: .5rem;
         padding-left: .5rem;
 

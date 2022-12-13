@@ -174,7 +174,7 @@ h3 {
 /*================================ */
 
 
-/*======= Main Content (About Section and Article) ======== */
+/*======= Main Content (Section that contains Table) ======== */
 .main {
     display: grid;
     background: linear-gradient(170deg,
@@ -210,7 +210,6 @@ figure {
     display: block;
     margin: 0 auto;
     padding: 1em 0;
-    /* margin-left: 0; */
     width: 85%;
 
 }
