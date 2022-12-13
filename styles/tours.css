@@ -57,6 +57,16 @@ a:visited {
     text-decoration: none;
 }
 
+td span {
+    color: #fff;
+}
+
+td span:hover {
+    font-weight: 800;
+    text-transform: uppercase;
+    color: antiquewhite;
+}
+
 h3 {
     color: #fff;
 }
@@ -175,7 +185,7 @@ h3 {
 }
 
 .section {
-    padding: 2.5em 0 2em;
+    padding: 1.5em 0 2em;
 }
 
 
@@ -211,7 +221,8 @@ figure {
     line-height: 120%;
     margin-bottom: 1.25rem;
     text-align: left;
-    border-bottom: 2px solid #406e8e;
+    border-bottom: 4px solid #406e8e;
+    font-family: Montserrat;
 }
 
 
@@ -226,20 +237,24 @@ table {
 th {
     color: #a9b4c2;
     text-align: left;
+    font-size: 1.2rem;
 }
 
 th p {
     color: #fff;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 th,
 td {
     padding: 14px 10px;
+    font-family: Noto;
 }
 
 td {
     color: #fff;
+    font-size: 1.2rem;
+    font-family: Noto;
 }
 
 tbody tr:hover {
@@ -251,6 +266,7 @@ tbody tr:hover {
 thead th {
     color: #fff;
     padding-bottom: .5em;
+    font-family: Montserrat;
 
 }
 
@@ -262,7 +278,7 @@ td:nth-of-type(1) {
 }
 
 td:nth-of-type(2) {
-    text-align: right;
+    text-align: center;
     width: 11%;
     padding-right: .5em;
 
@@ -270,22 +286,13 @@ td:nth-of-type(2) {
 
 
 thead th:nth-child(3) {
-    text-align: right;
+    text-align: left;
 }
 
 
 tbody th {
     vertical-align: top;
 }
-
-
-
-/* .about_description {
-    color: #a9b4c2;
-    margin-bottom: 2rem;
-    font-size: var(--normal-font-size);
-    border-top: 2px solid #ffff;
-} */
 
 
 /*=========================================== */
@@ -297,6 +304,18 @@ tbody th {
     text-align: center;
     background-color: #0f0f0f;
     padding-bottom: .5em;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer li img {
+    width: 30%;
+    min-width: 35px;
+    max-width: 45px;
 }
 
 /*========================== */
@@ -415,13 +434,6 @@ tbody th {
     .tour {
         padding-top: .25em;
     }
-
-    /* .about_description,
-    .article_description,
-    blockquote {
-        font-size: var(--smaller-font-size);
-    } */
-
 
 }
 

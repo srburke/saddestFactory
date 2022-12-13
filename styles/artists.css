@@ -264,13 +264,16 @@ a:visited {
 
 .muna_container:hover .about,
 .muna_container:active .about,
-.muna_container:focus .about, .claud_container:hover .about,
+.muna_container:focus .about,
+.claud_container:hover .about,
 .claud_container:active .about,
-.claud_container:focus .about, .charlie_container:hover .about,
+.claud_container:focus .about,
+.charlie_container:hover .about,
 .charlie_container:active .about,
-.charlie_container:focus .about, .jane_container:hover .about,
+.charlie_container:focus .about,
+.jane_container:hover .about,
 .jane_container:active .about,
-.jane_container:focus .about   {
+.jane_container:focus .about {
     display: block;
     background: rgb(30, 27, 24, 0.95);
     font-size: var(--normal-font-size);
@@ -297,83 +300,18 @@ a:visited {
     flex-direction: column;
 }
 
-.social { 
+.social {
     margin-top: 1em;
     position: absolute;
     left: 94%;
 }
 
-.muna_container:not(:hover) .social, .claud_container:not(:hover) .social, 
-.charlie_container:not(:hover) .social, 
+.muna_container:not(:hover) .social,
+.claud_container:not(:hover) .social,
+.charlie_container:not(:hover) .social,
 .jane_container:not(:hover) .social {
     display: none;
 }
-
-
-/**Vinyl Image Link CSS **/
-
-/* a:hover .nonhover,
-.ishover {
-    display: none;
-}
-
-a:hover .ishover {
-    display: block;
-}
-
-.muna_container a {
-    position: relative;
-    top: 89.9%;
-    left: 95.4%;
-
-}
-
-.muna_container a:hover {
-    top: 87%;
-    left: 94%;
-}
-
-.claud_container a {
-    position: relative;
-    top: 89.9%;
-    right: .6px;
-
-}
-
-.claud_container a:hover {
-    top: 87%;
-    left: 10px;
-}
-
-.charlie_container a {
-    position: relative;
-    left: 95.4%;
-    bottom: 1px;
-}
-
-.charlie_container a:hover {
-    left: 94.3%;
-    top: 8px;
-}
-
-.jane_container a {
-    position: relative;
-    bottom: 1px;
-    right: 1px;
-}
-
-.jane_container a:hover {
-    top: 8px;
-    left: 10px;
-} */
-
-/*======================================== */
-
-
-
-
-
-
 
 /*======================================== */
 
@@ -386,6 +324,18 @@ a:hover .ishover {
             #383838 0%,
             #0f0f0f 30%);
     padding-bottom: .5em;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer li img {
+    width: 30%;
+    min-width: 35px;
+    max-width: 45px;
 }
 
 /*========================== */
@@ -449,23 +399,26 @@ a:hover .ishover {
 
     .muna_container:hover .about,
     .muna_container:active .about,
-    .muna_container:focus .about, .claud_container:hover .about,
+    .muna_container:focus .about,
+    .claud_container:hover .about,
     .claud_container:active .about,
-    .claud_container:focus .about, .charlie_container:hover .about,
+    .claud_container:focus .about,
+    .charlie_container:hover .about,
     .charlie_container:active .about,
-    .charlie_container:focus .about, .jane_container:hover .about,
+    .charlie_container:focus .about,
+    .jane_container:hover .about,
     .jane_container:active .about,
-    .jane_container:focus .about  {
+    .jane_container:focus .about {
         width: 80%;
-       
+
         padding-right: .5rem;
         padding-left: .5rem;
         font-size: var(--normal-font-size);
     }
-    
-   .social {
-    left: 90%;
-   }
+
+    .social {
+        left: 90%;
+    }
 
 
     .footer {
@@ -475,18 +428,18 @@ a:hover .ishover {
 }
 
 @media screen and (max-width: 960px) {
-  
+
     .social img {
         min-width: 25px;
         max-width: 35px;
     }
-    
-    
+
+
     .title {
         left: 50px;
     }
-    
-    
+
+
 }
 
 @media screen and (max-width: 886px) {
@@ -528,14 +481,17 @@ a:hover .ishover {
 
 
     .muna_container:hover .about,
-.muna_container:active .about,
-.muna_container:focus .about, .claud_container:hover .about,
-.claud_container:active .about,
-.claud_container:focus .about, .charlie_container:hover .about,
-.charlie_container:active .about,
-.charlie_container:focus .about, .jane_container:hover .about,
-.jane_container:active .about,
-.jane_container:focus .about {
+    .muna_container:active .about,
+    .muna_container:focus .about,
+    .claud_container:hover .about,
+    .claud_container:active .about,
+    .claud_container:focus .about,
+    .charlie_container:hover .about,
+    .charlie_container:active .about,
+    .charlie_container:focus .about,
+    .jane_container:hover .about,
+    .jane_container:active .about,
+    .jane_container:focus .about {
         width: 100%;
         height: auto;
 
@@ -559,21 +515,21 @@ a:hover .ishover {
     .nav_item {
         padding-bottom: .68em;
     }
-    
+
     .social ul {
         flex-direction: row;
     }
-    
+
     .social {
         margin-top: 3em;
-        left: 80%;
+        left: 75%;
     }
-    
+
     .social img {
         min-width: 35px;
         max-width: 45px;
     }
-    
+
 }
 
 @media screen and (max-width: 585px) {
@@ -600,7 +556,7 @@ a:hover .ishover {
         display: flex;
         flex-direction: row;
         margin-right: 2em;
-      
+
     }
 
     .social img {

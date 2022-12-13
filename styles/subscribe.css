@@ -37,9 +37,9 @@ body {
 
 /*Container and Grid Max-Width=1280px to center main contents nicely*/
 .container {
-    max-width: 1280px;
-    margin-left: 1.5em;
-    margin-right: 1.5em;
+    max-width: 960px;
+    /* margin-left: 1.5em;
+    margin-right: 1.5em; */
 }
 
 .grid {
@@ -176,7 +176,7 @@ h3 {
     background: linear-gradient(170deg,
             #383838 0%,
             #0f0f0f 30%);
-    grid-template-areas: "main sub main";
+    grid-template-areas: "sub sub sub";
     grid-area: main;
 }
 
@@ -192,7 +192,14 @@ h3 {
 
 .subscribe_container {
     padding-top: 2em;
+    padding-bottom: 2em;
     row-gap: 3.5em;
+}
+
+.subscribe_container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0.5rem 0.5rem rgba(22, 116, 160, 0.9), -0.5rem -0.5rem rgba(9, 133, 138, 0.9), inset 3px 3px 9px rgba(73, 73, 80, 0.3), inset -3px -3px 9px rgba(73, 73, 80, 0.3);
 }
 
 .subscribe_container,
@@ -212,34 +219,71 @@ label {
     margin-bottom: .5em;
 }
 
-#submit {
-    margin-left: 7.5em;
-    margin-top: .5em;
-    padding: .10em 2em;
+#submit,
+#reset {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    padding: .20em 1.5em;
     border: 2px solid black;
-    background-color: #406e8e;
+    background-color: #383838;
+    color: #fff;
+    font-family: Noto;
+    font-size: 1rem;
+
+}
+
+#submit {
+    margin-right: .5rem;
+}
+
+#reset {
+    padding: .20em 2em;
 }
 
 
 .subscribe_title {
     font-size: var(--biggest-font-size);
-    color: #fff;
+    color: #406e8e;
     line-height: 120%;
     margin-bottom: 1.25rem;
-    text-align: left;
-   
+    text-align: center;
+
 }
 
+#check_box {
+    float: none;
+}
 
+#email_type,
+#direct_mail,
+#customize_type {
+    width: 35px;
+    margin-left: 1em;
+    margin-bottom: 1.2rem;
+}
 
+#email,
+#first_name,
+#last_name {
+    width: 550px;
+    margin-bottom: 1.5rem;
+    height: 35px;
+}
 
+form {
+    margin-left: 2em;
+    margin-right: 2em;
 
-/* .about_description {
-    color: #a9b4c2;
-    margin-bottom: 2rem;
-    font-size: var(--normal-font-size);
-    border-top: 2px solid #ffff;
-} */
+}
+
+label {
+    float: none;
+    font-size: 1.2rem;
+}
+
+h2 {
+    margin-bottom: .5rem;
+}
 
 
 /*=========================================== */
@@ -252,6 +296,19 @@ label {
     background-color: #0f0f0f;
     padding-bottom: .5em;
 }
+
+.footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer li img {
+    width: 30%;
+    min-width: 35px;
+    max-width: 45px;
+}
+
 
 /*========================== */
 
@@ -369,12 +426,6 @@ label {
     .subscribe {
         padding-top: .25em;
     }
-
-    /* .about_description,
-    .article_description,
-    blockquote {
-        font-size: var(--smaller-font-size);
-    } */
 
 
 }

@@ -67,30 +67,61 @@
 
         <main class="main">
             <section class="subscribe section" id="tour">
+
                 <div class="subscribe_container container grid">
-                    
-                    <h1 class="subscribe_title">Saddest Factory Records</h1>
-                    
-                   <p>Want to stay up-to-date on the latest from Saddest Factory
-                    Records?
-                    
-                    
-                    <br>
-                    
-                    We send a monthly newsletter with new music videos, pre-orders,
-                    tour dates, Secretly Store sales, and all other label & artist news.
-                    Just enter your e-mail address and select any of the lists below to
-                    start getting our updates.
-                   </p>
-                   
-                   <form action="joinlist.html" method="get" name="joinlist_form" id="joinlist_form">
-                    <input type="email" name="email" id="email" class="text_input" required><br>
-                    <label for="first_name">First Name:</label>
-                    <input type="text" name="first_name" id="first_name" class="text_input" autofocus required><br>
-                    <label for="last_name">Last Name:</label>
-                    <input type="text" name="last_name" id="last_name" class="text_input" required><br>
-                    <input type="submit" id="submit" value="Subscribe">
-                    <div>
+
+
+                    <form action="joinlist.html" method="get" name="joinlist_form" id="joinlist_form">
+
+                        <p>Want to stay up-to-date on the latest from Saddest Factory
+                            Records?
+
+
+                            <br>
+
+                            We send a monthly newsletter with new music videos, pre-orders,
+                            tour dates, and all other label & artist news.
+                            Just enter your e-mail address and select any of the lists below to
+                            start getting our updates.
+                        </p>
+
+                        <br>
+
+                        <label for="email">Email</label> <br>
+                        <input type="email" name="email" id="email" class="text_input" required><br>
+                        <label for="first_name">First Name</label><br>
+                        <input type="text" name="first_name" id="first_name" class="text_input" autofocus required><br>
+                        <label for="last_name">Last Name</label><br>
+                        <input type="text" name="last_name" id="last_name" class="text_input" required><br>
+
+
+
+                        <br>
+
+                        <h2>Marketing Permissions</h2>
+                        <p>Saddest Factory will use the information you provide on this form to be in touch with you and
+                            to provide updates and marketing. Please let us know all the ways you would like to hear
+                            from us:</p><br>
+
+                        <input type="checkbox" name="email_type" id="email_type">
+                        <label for="email_type" id="check_box">Email</label><br>
+                        <input type="checkbox" name="direct_mail" id="direct_mail">
+                        <label for="direct_mail" id="check_box">Direct Mail</label><br>
+                        <input type="checkbox" name="customize_type" id="customize_type">
+                        <label for="customize_type" id="check_box">Customized Advertising</label><br>
+
+
+
+                        <p>You can change your mind at any time by clicking the unsubscribe link in the footer of any
+                            email you receive from us, or by contacting us at saddestfactory@saddestfactory.com. We will
+                            treat
+                            your information with respect. By clicking below, you agree that we may process your
+                            information in accordance
+                            with our terms.</p>
+
+                        <input type="submit" id="submit" value="Submit">
+                        <input type="reset" name="reset" id="reset">
+                        <div>
 
 
             </section>
@@ -98,12 +129,37 @@
 
         </main>
         <footer class="footer" id="footer">
-            <div class="footer_container container grid">
+            <div class="footer_container">
                 <div>
                     <a href="#" class="footer_link">
                         <img src="/images/sadfactlogo.png" class="footer_logo" alt="Saddest Factory Logo">
                     </a>
+
+
                 </div>
+
+
+                <ul>
+                    <li>
+                        <a href="https://open.spotify.com/user/404vmwboxud8yc4aupf9xj8jt"><img
+                                src="/images/Spotify_Icon_RGB_White.png" alt="Spotify logo" width="40px"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/saddestfactoryrecords/?hl=en"><img
+                                src="/images/Instagram_Glyph_White.png" alt="Instagram logo" width="40px"></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/saddestfactory"><img
+                                src="/images/Twitter social icons - circle - white.png" alt="Twitter logo"
+                                width="40px"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/saddestfactoryrecords"><img
+                                src="/images/f_logo_RGB-White_100.png" alt="Facebook logo" width="40px"></a>
+                    </li>
+                </ul>
+
+
             </div>
         </footer>
     </body>
