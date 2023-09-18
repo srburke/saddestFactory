@@ -35,11 +35,9 @@ body {
 
 }
 
-/*Container and Grid Max-Width=1280px to center main contents nicely*/
+/*Container and Grid Max-Width=960px to center main contents nicely*/
 .container {
     max-width: 960px;
-    /* margin-left: 1.5em;
-    margin-right: 1.5em; */
 }
 
 .grid {
@@ -163,14 +161,14 @@ h3 {
     text-shadow: 2px 2px 2px #908484;
 }
 
-.nav_logo:hover {
+.nav_logo:hover, .nav_logo:focus {
     color: var(--first-color);
 }
 
 /*================================ */
 
 
-/*======= Main Content (About Section and Article) ======== */
+/*======= Main Content (Form to Subscribe) ======== */
 .main {
     display: grid;
     background: linear-gradient(170deg,
@@ -320,10 +318,6 @@ h2 {
 }
 
 @media screen and (max-width: 1279px) {
-    .container {
-        margin-left: 1em;
-        margin-right: 1em;
-    }
 
     #lablename {
         font-size: 1.5rem;
@@ -395,6 +389,26 @@ h2 {
     .nav_link {
         font-size: var(--smaller-font-size);
     }
+    
+    p {
+        font-size: var(--smaller-font-size);
+    }
+    
+    label {
+    font-size: var(--smaller-font-size);
+}
+
+    #email,
+        #first_name,
+    #last_name {
+        width: 300px;
+        margin-bottom: 1.5rem;
+        height: 35px;
+    }
+
+    #submit {
+        margin-left: 2.5rem;
+    }
 
 
 }
@@ -419,7 +433,7 @@ h2 {
         font-size: var(--smaller-font-size);
     }
 
-    .tour_title {
+    .subscribe_title {
         font-size: 2rem;
     }
 

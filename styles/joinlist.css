@@ -38,8 +38,6 @@ body {
 /*Container and Grid Max-Width=1280px to center main contents nicely*/
 .container {
     max-width: 960px;
-    /* margin-left: 1.5em;
-    margin-right: 1.5em; */
 }
 
 .grid {
@@ -163,14 +161,14 @@ h3 {
     text-shadow: 2px 2px 2px #908484;
 }
 
-.nav_logo:hover {
+.nav_logo:hover, .nav_logo:focus {
     color: var(--first-color);
 }
 
 /*================================ */
 
 
-/*======= Main Content (About Section and Article) ======== */
+/*======= Main Content (Message for Subscribing) ======== */
 .main {
     display: grid;
     background: linear-gradient(170deg,
@@ -222,16 +220,6 @@ h3 {
 
 
 
-
-
-/* .about_description {
-    color: #a9b4c2;
-    margin-bottom: 2rem;
-    font-size: var(--normal-font-size);
-    border-top: 2px solid #ffff;
-} */
-
-
 /*=========================================== */
 
 
@@ -254,11 +242,6 @@ h3 {
 }
 
 @media screen and (max-width: 1279px) {
-    .container {
-        margin-left: 1em;
-        margin-right: 1em;
-    }
-
     #lablename {
         font-size: 1.5rem;
     }
@@ -353,20 +336,9 @@ h3 {
         font-size: var(--smaller-font-size);
     }
 
-    .tour_title {
-        font-size: 2rem;
-    }
-
     .subscribe {
         padding-top: .25em;
     }
-
-    /* .about_description,
-    .article_description,
-    blockquote {
-        font-size: var(--smaller-font-size);
-    } */
-
 
 }
 
