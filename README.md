@@ -8,7 +8,7 @@ Final Project, a mock website for the record label Saddest Factory using pure HT
   - Videos
 
 ## Final Project Turnout
-- As this was my first ever website I've created, there are some changes/updates I would like to do if I get back to this project.
+- As this was my first ever website I've created, there are some changes/updates I would like to do if I were to rework it.
   - Not use as many different fonts, and stick to three prominent colors
   - Change the theme to be more consistent throughout the pages since it's pretty inconsistent right now
   - Resize the paragraphs so that the text is more readable and user friendly
