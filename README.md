@@ -14,6 +14,7 @@ Final Project, a mock website for the record label Saddest Factory using pure HT
   - Resize the paragraphs so that the text is more readable and user friendly
   - Add top padding to the artist description boxes
   - Change the positioning of the artists socials from being on the side to bottom of artist description box
+  - Possibly implement the usage of BootStrap
 
 https://github.com/srburke/saddestFactory/assets/15665394/3ee60648-445f-4a05-b4dc-4f71ee9f1949
 
