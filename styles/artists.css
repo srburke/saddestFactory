@@ -156,7 +156,8 @@ a:visited {
     text-shadow: 2px 2px 2px #908484;
 }
 
-.nav_logo:hover, .nav_logo:focus {
+.nav_logo:hover,
+.nav_logo:focus {
     color: var(--first-color);
 }
 
@@ -182,7 +183,6 @@ a:visited {
 .section {
     display: grid;
     grid-area: sec;
-
     grid-template-areas: "muna claud"
         "charlie jane";
 }
@@ -190,26 +190,26 @@ a:visited {
 
 .muna_container {
     grid-area: muna;
-    background-image: linear-gradient(340deg, rgba(245, 246, 252, 0.20), rgba(209, 154, 36, 0.72)), url(/images/muna2.webp);
+    background-image: linear-gradient(340deg, rgba(245, 246, 252, 0.20), rgba(209, 154, 36, 0.72)), url(images/muna2.webp);
     position: relative;
 }
 
 
 .claud_container {
     grid-area: claud;
-    background-image: linear-gradient(-127deg, rgba(245, 246, 252, 0.20), rgba(122, 220, 181, 0.72)), url(/images/claud2.png);
+    background-image: linear-gradient(-127deg, rgba(245, 246, 252, 0.20), rgba(122, 220, 181, 0.72)), url(images/claud2.png);
 
 }
 
 .charlie_container {
     grid-area: charlie;
-    background-image: linear-gradient(-340deg, rgba(245, 246, 252, 0.20), rgba(25, 96, 189, 0.72)), url(/images/charlie2.jpg);
+    background-image: linear-gradient(-340deg, rgba(245, 246, 252, 0.20), rgba(25, 96, 189, 0.72)), url(images/charlie2.jpg);
 
 }
 
 .jane_container {
     grid-area: jane;
-    background-image: linear-gradient(-127deg, rgba(245, 246, 252, 0.20), rgba(117, 19, 93, 0.72)), url(/images/jane.jpg);
+    background-image: linear-gradient(-127deg, rgba(245, 246, 252, 0.20), rgba(117, 19, 93, 0.72)), url(images/jane.jpg);
 
 }
 
@@ -220,7 +220,7 @@ a:visited {
     background-repeat: no-repeat;
     position: relative;
     left: 0;
-    top: 0;
+    top: 5;
     right: 0;
     bottom: 0;
     box-shadow: inset -5px -5px 9px rgba(114, 105, 105, 0.45), inset 5px 5px 9px rgba(50, 50, 53, 0.3);
@@ -277,13 +277,14 @@ a:visited {
     display: block;
     background: rgb(30, 27, 24, 0.95);
     font-size: var(--normal-font-size);
-    box-shadow: 0.5rem 0.5rem rgba(22, 11, 1, 0.9), -0.5rem -0.5rem rgba(22, 11, 1, 0.9), inset 3px 3px 9px rgba(73, 73, 80, 0.3), inset -3px -3px 9px rgba(73, 73, 80, 0.3);
+    box-shadow: 0.5rem 0.5rem rgba(22, 11, 1, 0.9), -0.5rem -0.5rem rgba(22, 11, 1, 0.9);
     font-family: Montserrat;
     color: #fff;
     font-weight: 500;
     line-height: 1.5;
     text-align: left;
     border: 2px solid #8d99ae;
+    margin-top: 3.5rem;
     padding: .5rem 2rem;
 
     margin-right: 5em;
@@ -297,13 +298,14 @@ a:visited {
 
 .social ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .social {
     margin-top: 1em;
     position: absolute;
-    left: 94%;
+    left: 82%;
+    top: 90%;
 }
 
 .muna_container:not(:hover) .social,
