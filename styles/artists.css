@@ -190,26 +190,26 @@ a:visited {
 
 .muna_container {
     grid-area: muna;
-    background-image: linear-gradient(340deg, rgba(245, 246, 252, 0.20), rgba(209, 154, 36, 0.72)), url(images/muna2.webp);
+    background-image: linear-gradient(340deg, rgba(245, 246, 252, 0.20), rgba(209, 154, 36, 0.72)), url(/images/muna2.webp);
     position: relative;
 }
 
 
 .claud_container {
     grid-area: claud;
-    background-image: linear-gradient(-127deg, rgba(245, 246, 252, 0.20), rgba(122, 220, 181, 0.72)), url(images/claud2.png);
+    background-image: linear-gradient(-127deg, rgba(245, 246, 252, 0.20), rgba(122, 220, 181, 0.72)), url(/images/claud2.png);
 
 }
 
 .charlie_container {
     grid-area: charlie;
-    background-image: linear-gradient(-340deg, rgba(245, 246, 252, 0.20), rgba(25, 96, 189, 0.72)), url(images/charlie2.jpg);
+    background-image: linear-gradient(-340deg, rgba(245, 246, 252, 0.20), rgba(25, 96, 189, 0.72)), url(/images/charlie2.jpg);
 
 }
 
 .jane_container {
     grid-area: jane;
-    background-image: linear-gradient(-127deg, rgba(245, 246, 252, 0.20), rgba(117, 19, 93, 0.72)), url(images/jane.jpg);
+    background-image: linear-gradient(-127deg, rgba(245, 246, 252, 0.20), rgba(117, 19, 93, 0.72)), url(/images/jane.jpg);
 
 }
 
