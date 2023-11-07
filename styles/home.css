@@ -177,7 +177,8 @@ blockquote {
 }
 
 
-.nav_logo:hover, .nav_logo:focus {
+.nav_logo:hover,
+.nav_logo:focus {
     color: var(--first-color);
 }
 
