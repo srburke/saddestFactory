@@ -168,13 +168,14 @@ blockquote {
 }
 
 .nav_logo span {
-    color: #000066;
+    color: #406e8e;
     font-family: Noto;
     font-weight: 600;
     font-size: 2rem;
     text-align: center;
-    text-shadow: 2px 2px 2px #908484;
+    text-shadow: 2px 2px 2px #282828;
 }
+
 
 
 .nav_logo:hover,
