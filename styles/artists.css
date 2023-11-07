@@ -286,7 +286,6 @@ a:visited {
     border: 2px solid #8d99ae;
     margin-top: 3.5rem;
     padding: .5rem 2rem;
-
     margin-right: 5em;
 }
 
@@ -349,7 +348,7 @@ a:visited {
     display: none;
 }
 
-@media screen and (max-width: 1395px) {
+@media screen and (max-width: 1500px) {
 
     .muna_container {
         background-position: center;
@@ -359,6 +358,30 @@ a:visited {
         top: 5%;
     }
 
+
+    .muna_container:hover .about,
+    .muna_container:active .about,
+    .muna_container:focus .about,
+    .claud_container:hover .about,
+    .claud_container:active .about,
+    .claud_container:focus .about,
+    .charlie_container:hover .about,
+    .charlie_container:active .about,
+    .charlie_container:focus .about,
+    .jane_container:hover .about,
+    .jane_container:active .about,
+    .jane_container:focus .about {
+        width: 90%;
+        margin-top: 2.5em;
+        padding-right: .5rem;
+        padding-left: .5rem;
+        font-size: var(--normal-font-size);
+    }
+
+
+    .social {
+        left: 70%;
+    }
 
     #lablename {
         font-size: 1.5rem;
@@ -412,7 +435,6 @@ a:visited {
     .jane_container:active .about,
     .jane_container:focus .about {
         width: 80%;
-
         padding-right: .5rem;
         padding-left: .5rem;
         font-size: var(--normal-font-size);
@@ -440,6 +462,8 @@ a:visited {
     .title {
         left: 50px;
     }
+
+
 
 
 }
@@ -474,11 +498,11 @@ a:visited {
 
     .title {
         width: 80%;
-        top: 15%;
+        top: 10%;
     }
 
     .title h2 {
-        font-size: 2.8rem;
+        font-size: 1rem;
     }
 
 
@@ -499,6 +523,7 @@ a:visited {
         padding-top: 1rem;
         padding-right: .5rem;
         padding-left: .5rem;
+        margin-top: 1rem;
 
     }
 
@@ -521,8 +546,8 @@ a:visited {
     }
 
     .social {
-        margin-top: 3em;
-        left: 75%;
+        margin-top: 0em;
+        left: 70%;
     }
 
     .social img {
@@ -541,9 +566,21 @@ a:visited {
         font-size: var(--small-font-size);
     }
 
+
+    .title {
+        width: 80%;
+        top: 5%;
+    }
+
+
+    .nav_logo {
+        display: none;
+
+    }
+
     .nav_item {
-        padding-left: .4em;
-        padding-right: .4em;
+        padding-left: .075em;
+        padding-right: .2em;
         padding-bottom: 1.3em;
 
     }
@@ -552,11 +589,33 @@ a:visited {
         font-size: var(--smaller-font-size);
     }
 
+
+    .muna_container:hover .about,
+    .muna_container:active .about,
+    .muna_container:focus .about,
+    .claud_container:hover .about,
+    .claud_container:active .about,
+    .claud_container:focus .about,
+    .charlie_container:hover .about,
+    .charlie_container:active .about,
+    .charlie_container:focus .about,
+    .jane_container:hover .about,
+    .jane_container:active .about,
+    .jane_container:focus .about {
+        width: 300px;
+        height: 350px;
+        margin: 0;
+        padding: 0;
+    }
+
     .social ul {
         display: flex;
         flex-direction: row;
-        margin-right: 2em;
+    }
 
+    .social {
+        top: 94%;
+        left: 50%;
     }
 
     .social img {
