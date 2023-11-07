@@ -364,15 +364,27 @@ figure img:focus {
 /*======================================== */
 
 
+
 /*======= Footer ======== */
 .footer {
     grid-area: foot;
     text-align: center;
-    background: linear-gradient(170deg,
-            #383838 0%,
-            #0f0f0f 30%);
-    padding-bottom: .5em;
+    background-color: #0f0f0f;
+    padding-bottom: 1.25em;
 }
+
+.footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer li img {
+    width: 30%;
+    min-width: 35px;
+    max-width: 45px;
+}
+
 
 /*========================== */
 

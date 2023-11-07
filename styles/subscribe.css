@@ -181,7 +181,7 @@ h3 {
 }
 
 .section {
-    padding: 2.5em 0 2em;
+    padding: 5em 0 2em;
 }
 
 
@@ -294,7 +294,8 @@ h2 {
     grid-area: foot;
     text-align: center;
     background-color: #0f0f0f;
-    padding-bottom: .5em;
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
 }
 
 .footer ul {
@@ -333,6 +334,7 @@ h2 {
     .footer {
         grid-area: foot;
         overflow: hidden;
+
     }
 }
 
